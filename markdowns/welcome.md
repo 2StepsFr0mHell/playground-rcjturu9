@@ -49,7 +49,8 @@ class Bicycle {
     public String toString() {
         return "current speed of bicycle is "+speed;
     }
-}```
+}
+```
 
 ```java
 // { autofold
@@ -113,7 +114,8 @@ class Bicycle {
         return "current speed of bicycle is "+speed;
     }
 }
-//}```
+//}
+```
 
 Please refer to the [documentation](https://tech.io/doc) to learn more about adding programming exercises within your contribution.
 

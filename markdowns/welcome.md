@@ -1,6 +1,8 @@
-The goal of this playground is to learn some basic stuff about Dart. It is highly recommended to know the basics of Java to be able to complete this playground.
+This playground is extracted and adapted from the [official Dart tutorial for Java developers at codelabs.developers.google.com](https://codelabs.developers.google.com/codelabs/from-java-to-dart/#1). The playground is a Github repo, feel free to contribute!
 
-Here below is the Java program we'd like to create in Dart: it instantiates a new bicycle and speeds up:
+It is highly recommended to know the basics of Java to be able to complete this playground.
+
+Here below is the Java program we'd like to create in Dart: it instantiates a new bicycle and speeds up.
 
 ```java runnable
 // { autofold
@@ -66,19 +68,21 @@ class Bicycle {
 //}
 ```
 
-# Create your first Dart class
+# Create your first Dart program
 
-You can write your code here and run it.
+Let's have fun with some Dart. 
+
+Follow the steps below and complete the code. If you don't manage to make it work, you can still check the solution at the end of the playground.
 
 ```dart runnable
 class MyClass {
+//@todo
 }
 
 void main() {
+//@todo
 }
 ```
-
-Follow the steps below. If you don't manage to make it work, you can still check the solution at the end of the playground.
 
 ## 1) Define the class
 
@@ -142,6 +146,10 @@ String toString() => 'my message $variableName';
 - Shorten one-line functions or methods using fat arrow (`=>`) notation.
 
 - Use string interpolation to put the value of an expression inside a string literal: `${expression}`. If the expression is an identifier, you can skip the braces: `$variableName`.
+
+## 5) Complete the program
+
+You're almost there. Add methods to speed up and brake and play with your Bicycle.
 
 ## Solution
 

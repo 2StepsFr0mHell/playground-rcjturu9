@@ -1,4 +1,4 @@
-title: Custom Template
+title: From Java to Dart
 plan:
-- title: Welcome
+- title: A Basic class
   statement: markdowns/welcome.md

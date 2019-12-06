@@ -1,7 +1,119 @@
-# Welcome!
+# Writing your first Dart class
 
-This Basic template lets you get started quickly with a simple working example. If it is your first contribution then you should have a look at the [Getting Started](https://tech.io/doc/getting-started-create-playground) document.
+The goal of this playground is to learn some basic stuff about Dart. It is highly recommended to know the basics of Java to be able to complete this playground.
 
+Here's the Java class we'd like to create in Dart:
+
+```
+class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+        
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+        
+    public int getCadence() {
+        return cadence;
+    }
+        
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+
+    public int getGear() {
+        return gear;
+    }
+        
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+        
+    public int getSpeed() {
+        return speed;
+    }
+        
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+        
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+    
+    @Override
+    public String toString() {
+        return "current speed of bicycle is "+speed;
+    }
+}```
+
+```java
+// { autofold
+import java.io.*;
+//}
+
+public class Main {
+
+    public static void main (String[] args) {
+        Bicycle bicycle = new Bicycle(0, 2, 0);
+        System.out.println(bicycle.toString());
+        System.out.println("Let's brake");
+        bicycle.applyBrake(1);
+        System.out.println(bicycle.toString());
+    }
+
+}
+// { autofold
+class Bicycle {
+        
+    private int cadence;
+    private int gear;
+    private int speed;
+        
+    public Bicycle(int startCadence, int startSpeed, int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
+    }
+        
+    public int getCadence() {
+        return cadence;
+    }
+        
+    public void setCadence(int newValue) {
+        cadence = newValue;
+    }
+    
+    public int getGear() {
+        return gear;
+    }
+        
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+        
+    public int getSpeed() {
+        return speed;
+    }
+        
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+        
+    public void speedUp(int increment) {
+        speed += increment;
+    }
+    
+    @Override
+    public String toString() {
+        return "current speed of bicycle is "+speed;
+    }
+}
+//}```
 
 Please refer to the [documentation](https://tech.io/doc) to learn more about adding programming exercises within your contribution.
 

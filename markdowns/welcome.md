@@ -52,7 +52,9 @@ class Bicycle {
 }
 ```
 
-```java
+This Java program instantiates a new bicycle and brakes:
+
+```java runnable
 // { autofold
 import java.io.*;
 //}

@@ -153,8 +153,8 @@ You're almost there. Add methods to speed up and brake and play with your Bicycl
 
 ## Solution
 
->! Spoiler plop
 ```dart runnable
+// { autofold
 class Bicycle {
   int cadence;
   int _speed = 0;
@@ -181,6 +181,7 @@ void main() {
   bike.sppedUp(1);
   print(bike);
 }
+//}
 ```
 
 

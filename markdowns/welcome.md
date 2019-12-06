@@ -178,7 +178,7 @@ class Bicycle {
 void main() {
   var bike = Bicycle(0, 0);
   print(bike);
-  bike.sppedUp(1);
+  bike.speedUp(1);
   print(bike);
 }
 //}

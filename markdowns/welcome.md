@@ -1,56 +1,6 @@
 The goal of this playground is to learn some basic stuff about Dart. It is highly recommended to know the basics of Java to be able to complete this playground.
 
-Here's the Java class we'd like to create in Dart:
-
-```
-class Bicycle {
-        
-    private int cadence;
-    private int gear;
-    private int speed;
-        
-    public Bicycle(int startCadence, int startSpeed, int startGear) {
-        gear = startGear;
-        cadence = startCadence;
-        speed = startSpeed;
-    }
-        
-    public int getCadence() {
-        return cadence;
-    }
-        
-    public void setCadence(int newValue) {
-        cadence = newValue;
-    }
-
-    public int getGear() {
-        return gear;
-    }
-        
-    public void setGear(int newValue) {
-        gear = newValue;
-    }
-        
-    public int getSpeed() {
-        return speed;
-    }
-        
-    public void applyBrake(int decrement) {
-        speed -= decrement;
-    }
-        
-    public void speedUp(int increment) {
-        speed += increment;
-    }
-    
-    @Override
-    public String toString() {
-        return "current speed of bicycle is "+speed;
-    }
-}
-```
-
-This Java program instantiates a new bicycle and brakes:
+Here below is the Java program we'd like to create in Dart: it instantiates a new bicycle and speeds up:
 
 ```java runnable
 // { autofold
@@ -62,8 +12,8 @@ public class Main {
     public static void main (String[] args) {
         Bicycle bicycle = new Bicycle(0, 0);
         System.out.println(bicycle.toString());
-        System.out.println("Let's brake");
-        bicycle.applyBrake(1);
+        System.out.println("Let's speed up");
+        bicycle.speedUp(1);
         System.out.println(bicycle.toString());
     }
 
@@ -120,17 +70,17 @@ class Bicycle {
 
 You can write your code here and run it.
 
-```dart runable
-class Bicycle {
+```dart runnable
+class MyClass {
 }
 
 void main() {
 }
 ```
 
-Follow all the steps below. If you don't manage to make it work, you can still check the solution at the end of the playground.
+Follow the steps below. If you don't manage to make it work, you can still check the solution at the end of the playground.
 
-## Define the Bicycle class
+## 1) Define the class
 
 ```dart
 class MyClass {
@@ -149,7 +99,7 @@ void main() {
 
 - By default, Dart provides implicit getters and setters for all public instance variables. You don't need to define your own getters/setters unless you want to enforce read-only or write-only variables, compute or verify a value, or update a value elsewhere.
 
-## Define the constructor
+## 2) Define the constructor
 
 ```dart
 MyClass(this.myPublicInt, this.myPublicString);
@@ -157,7 +107,7 @@ MyClass(this.myPublicInt, this.myPublicString);
 
 - Using `this` in a constructor's parameter list is a handy shortcut for assigning values to instance variables.
 
-## Instantiate and print a bicycle instance
+## 3) Instantiate and print an instance
 
 ```dart
 void main() {
@@ -176,7 +126,7 @@ Instance of `MyClass`
 
 No errors or warnings should appear, indicating that type inference is working, and that the analyzer infers that `var bob = ...` defines a MyClass instance. 
 
-## Improve the output
+## 4) Improve the output
 
 ```dart
 @override
@@ -195,6 +145,7 @@ String toString() => 'my message $variableName';
 
 ## Solution
 
+>! Spoiler plop
 ```dart runnable
 class Bicycle {
   int cadence;
@@ -217,7 +168,9 @@ class Bicycle {
 }
 
 void main() {
-  var bike = Bicycle(2, 1);
+  var bike = Bicycle(0, 0);
+  print(bike);
+  bike.sppedUp(1);
   print(bike);
 }
 ```
